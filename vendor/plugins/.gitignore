@@ -1,2 +1,4 @@
 jboss-rails-plugin
+activerecord-jdbc*
+jdbc-*
 

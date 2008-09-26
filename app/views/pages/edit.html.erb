@@ -1,0 +1,9 @@
+
+<h1>Edit: <%= @page.title %></h1>
+
+<% form_for @page do |f| %>
+  <%= render :partial=>'form' %>
+  <div>
+    <%= f.submit 'Update' %>
+  </div>
+<% end %>

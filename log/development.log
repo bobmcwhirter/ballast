@@ -1,0 +1,27 @@
+  [4;36;1mSQL (0.025568)[0m   [0;1mCREATE TABLE schema_migrations (version text(0) NOT NULL) [0m
+  [4;35;1mSQL (0.021810)[0m   [0mCREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations (version)[0m
+  [4;36;1mSQL (0.002998)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20080926185049)
+  [4;35;1mSQL (0.057482)[0m   [0mCREATE TABLE pages (id INTEGER PRIMARY KEY AUTOINCREMENT, title text(100) NOT NULL, content text(32767) NOT NULL, created_at INTEGER, updated_at INTEGER) [0m
+  [4;36;1mSQL (0.007279)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080926185049')[0m
+  [4;35;1mSQL (0.004044)[0m   [0mSELECT SEQ FROM SQLITE_SEQUENCE WHERE NAME = 'schema_migrations'[0m
+  [4;36;1mSQL (0.002114)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002722)[0m   [0mSELECT name, sql FROM sqlite_master WHERE tbl_name = 'pages' AND type = 'index'[0m
+  [4;36;1mSQL (0.023521)[0m   [0;1mCREATE TABLE schema_migrations (version text(0) NOT NULL) [0m
+  [4;35;1mSQL (0.033204)[0m   [0mCREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations (version)[0m
+  [4;36;1mSQL (0.002902)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20080926185049)
+  [4;35;1mSQL (0.020583)[0m   [0mCREATE TABLE pages (id INTEGER PRIMARY KEY AUTOINCREMENT, title text(100) NOT NULL, content text(32767) NOT NULL, created_at INTEGER, updated_at INTEGER) [0m
+  [4;36;1mSQL (0.007948)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080926185049')[0m
+  [4;35;1mSQL (0.003860)[0m   [0mSELECT SEQ FROM SQLITE_SEQUENCE WHERE NAME = 'schema_migrations'[0m
+  [4;36;1mSQL (0.002211)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002745)[0m   [0mSELECT name, sql FROM sqlite_master WHERE tbl_name = 'pages' AND type = 'index'[0m
+  [4;36;1mSQL (0.023882)[0m   [0;1mCREATE TABLE schema_migrations (version text(0) NOT NULL) [0m
+  [4;35;1mSQL (0.031497)[0m   [0mCREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations (version)[0m
+  [4;36;1mSQL (0.003735)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20080926185049)
+  [4;35;1mSQL (0.021178)[0m   [0mCREATE TABLE pages (id INTEGER PRIMARY KEY AUTOINCREMENT, title text(100) NOT NULL, content text(32767) NOT NULL, created_at INTEGER, updated_at INTEGER) [0m
+  [4;36;1mSQL (0.008117)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080926185049')[0m
+  [4;35;1mSQL (0.003458)[0m   [0mSELECT SEQ FROM SQLITE_SEQUENCE WHERE NAME = 'schema_migrations'[0m
+  [4;36;1mSQL (0.002087)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002739)[0m   [0mSELECT name, sql FROM sqlite_master WHERE tbl_name = 'pages' AND type = 'index'[0m

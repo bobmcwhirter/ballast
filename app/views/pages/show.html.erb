@@ -1,0 +1,10 @@
+<h1><%= @page.title %></h1>
+<h2>
+  <%= link_to 'All pages', pages_url %> 
+  | <%= link_to 'Edit this page', edit_page_url( @page ) %>
+  | <%= link_to 'Delete this page', @page, :method=>:delete %>
+</h2>
+
+<div>
+  <%= @page.content %>
+</div>

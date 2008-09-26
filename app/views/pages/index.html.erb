@@ -1,0 +1,14 @@
+
+<h1>All Pages</h1>
+
+<ul>
+  <% for page in @pages %>
+    <li>
+      <%= link_to page.title, page %>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <%= link_to 'Create a new page', new_page_url %>
+</div>
