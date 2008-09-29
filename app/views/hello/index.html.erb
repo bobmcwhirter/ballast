@@ -1,2 +1,7 @@
 
 <h1>Hello <%= @name %></h1>
+
+request host: <%= request.host %><br/>
+name from params: <%= params[:name] %><br/>
+name from session: <%= session[:name] %><br/>
+<%= cookies[:JSESSIONID] %>

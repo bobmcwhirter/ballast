@@ -48,8 +48,9 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_ballast_session',
-    :secret      => 'ea7e801cf044cc641e57d7e1d90a5c177beb9ca89e3b50d2100606cb7d21dcc6c6e773957789ae077789747aec291709f044b97d68f8f01ccf63cad602cddc11'
+    :session_key    => '_ballast_session',
+    :secret         => 'ea7e801cf044cc641e57d7e1d90a5c177beb9ca89e3b50d2100606cb7d21dcc6c6e773957789ae077789747aec291709f044b97d68f8f01ccf63cad602cddc11',
+    :session_domain => 'local.ballast'
   }
 
   # Use the database for sessions instead of the cookie-based default,
